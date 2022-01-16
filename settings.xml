@@ -1,0 +1,52 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0                       http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository />
+  <interactiveMode />
+  <usePluginRegistry />
+  <offline />
+  <pluginGroups />
+  <servers>
+    <server>
+      <id>exchange-server</id>
+      <username>dev29_masakikawaguchi</username>
+      <password>Accenture2021</password>
+    </server>
+    <server>
+      <id>github</id>
+      <username>Masaki-Rock</username>
+      <password>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</password>
+    </server>
+    <server>
+      <id>github-oauth</id>
+      <passphrase>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</passphrase>
+    </server>
+  </servers>
+  <mirrors />
+  <proxies />
+  <profiles>
+    <!-- 開発環境用プロファイル -->
+    <profile>
+      <id>development</id>
+      <properties>
+        <!-- 接続アプリケーション -->
+        <connectedAppClientId>a4fc1e985e974cbd917a0b357671d024</connectedAppClientId>
+        <connectedAppClientSecret>6401b69833564e3eb91E6Ca9668E4ED1</connectedAppClientSecret>
+        <!-- ターゲット組織 -->
+        <businessGroup>アクセンチュア</businessGroup>
+        <environment>Sandbox</environment>
+        <!-- ランタイムマネージャ -->
+        <applicationName>smpl-dev-account-v1</applicationName>
+        <deploymentType>cloudhub</deploymentType>
+        <redeploy>true</redeploy>
+        <workerType>Micro</workerType>
+        <workers>1</workers>
+        <region>us-east-1</region>
+        <api.id>17534332</api.id>
+        <environment.clientId>e0d4cb05f70b41009d948ecf44b11031</environment.clientId>
+        <environment.client_secret>5470F704c42b4a98a8257f213c35c967</environment.client_secret>
+      </properties>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>development</activeProfile>
+  </activeProfiles>
+</settings>
